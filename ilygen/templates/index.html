@@ -1,0 +1,23 @@
+<style>
+    .p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    }
+</style>
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card text-white bg-danger mb-3">
+  <div class="card-body">
+      {% for c in gen %}
+    <h1 class="card-title" style = "font-size: 5em" >{{c}}</h1>
+      {% endfor %}
+      <p></p>
+    <p class="p" style="color: lightgrey"> from H to A</p>
+  </div>
+</div>
+{% endblock %}
+
